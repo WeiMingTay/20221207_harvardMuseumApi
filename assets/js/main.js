@@ -11,7 +11,7 @@ array = {} */
 // Hauptfunktion
 
 function callApi(classification) {
-	let url = `https://api.harvardartmuseums.org/${resource}?sortorder=${sortorder}&classification=${classification}&size=${size}&apikey=${apiKey}`;
+	let url = `https://api.harvardartmuseums.org/${resource}?sortorder=${sortorder}&period=${classification}&size=${size}&apikey=${apiKey}`;
 
 	fetch(url)
 		.then((response) => response.json())
